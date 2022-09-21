@@ -40,7 +40,7 @@ const loop = setInterval(() => {
         score += 100;
         document.getElementById("score").innerHTML = score;
     }
-    pipePositionScore = pipePosition;
+    pipePositionScore = pipePosition; 
 
 }, 10);
 
