@@ -56,7 +56,7 @@ header {
 	position: absolute;
 	bottom: 50;
 	width: 300px;
-	animation: cloud-animation infinite 5s linear;
+	animation: cloud-animation infinite 10s linear;
 
 }
 
@@ -88,10 +88,35 @@ header {
 	}
 }
 
-
-
 footer {
 	text-align: center;
 	background: rgb(196, 192, 192);
 	padding: 20px;
+}
+
+.recomecar {
+	width: 150px;
+	padding: 10px;
+	background-color: green;
+	color: white;
+	font-size: x-large;
+	border-radius: 20px;
+	border: 5px solid white;
+	margin: 0;
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 4;
+}
+
+.recomecar:hover {
+	background-color: black;
+
+}
+	
+h3{
+	padding: 10px;
 }
