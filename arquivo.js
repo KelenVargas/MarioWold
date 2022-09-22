@@ -3,6 +3,7 @@ const pipe = document.querySelector(".pipe");
 const cloud = document.querySelector(".cloud");
 let score = 0;
 pipePositionScore = pipe.offsetLeft;
+let start = document.querySelector("start");
 
 const jump = () => {
     mario.classList.add("jump");
@@ -40,13 +41,21 @@ const loop = setInterval(() => {
         score += 100;
         document.getElementById("score").innerHTML = score;
     }
-    pipePositionScore = pipePosition; 
+    pipePositionScore = pipePosition;
 
 }, 10);
 
 document.addEventListener("keydown", jump);
 
+const startGame = () => {
+    const start = document.querySelector('.start');
+    start.style.visibility = 'hidden';
+    iniciar();
+}
 
-
-
+function iniciar() {
+    pipe.classList.add("pipe-animation");
+    cloud.classList.add("cloud-animation");
+    start.setAttribute("hidden", "hidden");
+}
 

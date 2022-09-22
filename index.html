@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- • Criar button start
+     • Criar algoritmo que acelere o pipe. - animation
+        * pontos
+        * empos
+        * ciclos
+     • Colocar o cogumelo-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,11 +31,12 @@
         <h3>Pontos: <span id="score">0</span></h3>
         <!--Mario eo Pipe-->
         <img class="cloud" src="assets/img/clouds.png">
-        <img class="mario"  src="assets/img/mario.gif" alt="Mario Gif">
+        <img class="mario" src="assets/img/mario.gif" alt="Mario Gif">
         <img class="pipe" src="assets/img/pipe.png">
-
+     
+        <button id="start" class="start" onclick="startGame()">Start</button>
         <button id="recomecar" class="recomecar" onclick="window.location.reload ()" hidden>Recomeçar</button>
-        
+
 
     </div>
 

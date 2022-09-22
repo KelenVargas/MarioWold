@@ -29,6 +29,8 @@ header {
 	background-image: linear-gradient(#87ceeb, #e0f6ff);
 }
 
+
+
 .mario {
 	width: 150px;
 	position: absolute;
@@ -39,6 +41,11 @@ header {
 	position: absolute;
 	bottom: 0;
 	width: 80px;
+	right: -80px;
+	
+}
+
+.pipe-animation{
 	animation: pipe-animation infinite 1.5s linear;
 }
 
@@ -56,8 +63,10 @@ header {
 	position: absolute;
 	bottom: 50;
 	width: 300px;
-	animation: cloud-animation infinite 10s linear;
+}
 
+.cloud-animation{
+	animation: cloud-animation infinite 10s linear;
 }
 
 @keyframes cloud-animation {
@@ -94,7 +103,7 @@ footer {
 	padding: 20px;
 }
 
-.recomecar {
+.recomecar, .start {
 	width: 150px;
 	padding: 10px;
 	background-color: green;
